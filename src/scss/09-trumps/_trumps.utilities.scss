@@ -1,0 +1,36 @@
+.u-visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.u-skip-link {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  height: 1px;
+  width: 1px;
+  text-align: left;
+  overflow: hidden;
+  background-color: useHSL(--white);
+  padding: var(--space-2xs);
+  color: useHSL(--black);
+  font-weight: bold;
+
+  &:active, 
+  &:focus, 
+  &:hover {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    z-index: $zIndex-skip-link;
+  }
+
+}

@@ -1,0 +1,5 @@
+{% macro iconProps(modifier, symbol) %}
+<svg class="c-icon{% if modifier is defined %} {{ modifier }}{% endif %}" aria-hidden="true" focusable="false">
+  <use xlink:href="#{{ symbol }}"></use>
+</svg>  
+{% endmacro %}

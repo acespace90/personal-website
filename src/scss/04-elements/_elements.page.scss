@@ -1,7 +1,8 @@
 html {
   font-size: 100%;
   font-family: $font-primary;
-  color: useRGB(--primary-100);
-  background-color: useRGB(--white);
+  color: useHSL(--site-text);
+  background-color: useHSL(--site-bg);
   scroll-behavior: smooth;
+  transition: .3s ease;
 }

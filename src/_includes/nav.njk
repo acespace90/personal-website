@@ -1,0 +1,10 @@
+{% import "icon.njk" as icon %}
+
+<nav class="c-nav">
+  <a href="/" class="c-nav__logo"><span>Antonio</span> <span>Matera</span></a>
+  <a href="/posts" class="c-nav__item">Posts</a>
+  <a href="https://twitter.com/antonio_matera_" class="c-nav__item">Twitter</a>
+  <button class="c-nav__theme-btn js-theme-switcher" aria-label="Dark mode toggle">
+    {{ icon.iconProps('c-icon--24', 'ic-brightness-medium-24px') }}
+  </button>
+</nav>

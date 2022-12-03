@@ -20,7 +20,7 @@
   Outline
 *------------------------------------*/
 @mixin outline {
-  outline: remify(1px) solid useHSL(--accent-100);
+  outline: remify(2px) solid useHSL(--site-text);
 }
 
 /*------------------------------------*
