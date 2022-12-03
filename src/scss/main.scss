@@ -1,0 +1,71 @@
+// SETTINGS
+// Settings are for variables used site-wide.
+// Typical settings are color variables, base font size and line height, breakpoints variables, etc.
+@import "01-settings/settings.typo.scss";
+@import "01-settings/settings.config.scss";
+@import "01-settings/settings.breakpoints.scss";
+@import "01-settings/settings.colors.scss";
+@import "01-settings/settings.zindex.scss";
+@import "01-settings/settings.spacings.scss";
+@import "01-settings/settings.radiuses.scss";
+@import "01-settings/settings.shadows.scss";
+
+// TOOLS
+// Tools holds mixins and functions.
+@import "02-tools/tools.map-deep-get.scss";
+@import "02-tools/tools.breakpoints.scss";
+@import "02-tools/tools.spacings.scss";
+@import "02-tools/tools.radiuses.scss";
+@import "02-tools/tools.colors.scss";
+@import "02-tools/tools.backgrounds.scss";
+@import "02-tools/tools.mixins.scss";
+@import "02-tools/media-queries.scss";
+@import "02-tools/tools.typo.scss";
+@import "02-tools/tools.shadows.scss";
+
+// GENERIC
+// Generic is the first layer actually producing some CSS.
+// This layer is seldom modified, and is usually the same across any projects you work on.
+// It contains things like Normalize. css, global box-sizing rules, CSS resets and so on.
+@import "03-generic/generic.box-sizing.scss";
+@import "03-generic/generic.normalize.scss";
+@import "03-generic/generic.reset.scss";
+
+// ELEMENTS
+// This contains bare, un-classed HTML elements.
+// The Elements layer is typically the last one in which we’d find bare, element-based selectors,
+// and is very rarely added to or changed after initial setup.
+// Once we have defined element-level styles, all additions and deviations should be implemented using classes.
+@import "04-elements/elements.page.scss";
+@import "04-elements/elements.typo.scss";
+@import "04-elements/elements.links.scss";
+@import "04-elements/elements.lists.scss";
+@import "04-elements/elements.buttons.scss";
+@import "04-elements/elements.image.scss";
+@import "04-elements/elements.svgs.scss";
+
+// OBJECTS
+// This is the first layer using classes. Classes are used to style non cosmetic design patterns (like OOCSS objects).
+// Wrappers, layout systems and media object are perfect candidates.
+@import "05-objects/object.grid.scss";
+@import "05-objects/object.paper.scss";
+
+// LAYOUTS
+
+
+// VENDOR
+// Thirdy part css files
+// @import "07-vendors/vendors.blueprint.scss";
+
+
+// COMPONENTS
+// The Components layer is where we begin to style recognisable pieces of UI.
+// We’re still binding onto classes here, so our specificity hasn’t yet increased.
+// However, this layer is more explicit than the last one in that we are now styling explicit,
+// designed pieces of the DOM. We shouldn’t find any selectors with a lower specificity than one class in this layer.
+@import "08-components/components.header.scss";
+
+// TRUMPS
+// It is inelegant and heavy- handed, and contains utility and helper classes, hacks and overrides.
+// A lot of the declarations in this layer will carry !important
+@import "09-trumps/trumps.trumps.scss";

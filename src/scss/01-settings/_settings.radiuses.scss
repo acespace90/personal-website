@@ -1,0 +1,33 @@
+@use "sass:math";
+
+@function remify($pixels) {
+  $tempCalc: math.div($pixels, 16px);
+  @return $tempCalc * 1rem;
+}
+
+$radius-units: (
+  radius-1  : remify(1px),
+  radius-2  : remify(2px),
+  radius-4  : remify(4px),
+  radius-6  : remify(6px),
+  radius-8  : remify(8px),
+  radius-10 : remify(10px),
+  radius-12 : remify(12px),
+  radius-14 : remify(14px),
+  radius-16 : remify(16px),
+  radius-20 : remify(20px),
+  radius-24 : remify(24px),
+  radius-28 : remify(28px),
+  radius-32 : remify(32px),
+  radius-36 : remify(36px),
+  radius-40 : remify(40px),
+  radius-44 : remify(44px),
+  radius-48 : remify(48px),
+  radius-56 : remify(56px),
+  radius-64 : remify(64px),
+  radius-80 : remify(80px),
+  radius-96 : remify(96px)
+);
+
+// usage
+// border-radius: radius(radius-4);

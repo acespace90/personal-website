@@ -1,0 +1,57 @@
+@import "../../../node_modules/blueprint-css/src/config.scss";
+
+$prefix: 'class';
+$cols: 12;
+$gutter: $global-gutter;
+$sm-break: bp(small);
+$md-break: bp(medium);
+$lg-break: bp(large);
+$xl-break: bp(xlarge);
+
+@import "../../../node_modules/blueprint-css/src/base.scss";
+@import "../../../node_modules/blueprint-css/src/column-generator.scss";
+@import "../../../node_modules/blueprint-css/src/grid.scss";
+
+[#{$prefix}~='grid'] {
+  @include min-screen(bp(medium)) {
+    grid-gap: $gutter * 2;
+  }
+}
+
+[#{$prefix}~='grid--row-spaced'] {
+  grid-gap: remify(64px) ($gutter * 2);
+
+  @include min-screen(bp(medium)) {
+    grid-gap: remify(48px) $gutter * 2;
+  }
+}
+
+[#{$prefix}~='grid--deco-line'] {
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    width: remify(64px);
+    height: remify(2px);
+    background-color: useHSL(--accent-100);
+    position: relative;
+    left: 0;
+    top: 0;
+
+    @include min-screen(bp(xlarge)) {
+      top: remify(14px);
+    }
+  }
+}
+
+// COMMUNITY PAGE EDGE CASE
+[#{$prefix}~='grid--row-spaced'] + [#{$prefix}~='grid--row-spaced'] {
+
+  margin-top: remify(64px);
+
+  @include min-screen(bp(medium)) {
+    margin-top: remify(48px);
+  }
+
+}

@@ -1,0 +1,47 @@
+@use "sass:math";
+
+@function remify($pixels) {
+  $tempCalc: math.div($pixels, 16px);
+  @return $tempCalc * 1rem;
+}
+
+$spacing-units: (
+  space-0  : 0,
+  space-1  : remify(1px),
+  space-2  : remify(2px),
+  space-4  : remify(4px),
+  space-6  : remify(6px),
+  space-8  : remify(8px),
+  space-10 : remify(10px),
+  space-12 : remify(12px),
+  space-14 : remify(14px),
+  space-16 : remify(16px),
+  space-20 : remify(20px),
+  space-24 : remify(24px),
+  space-28 : remify(28px),
+  space-32 : remify(32px),
+  space-36 : remify(36px),
+  space-40 : remify(40px),
+  space-44 : remify(44px),
+  space-48 : remify(48px),
+  space-56 : remify(56px),
+  space-64 : remify(64px),
+  space-80 : remify(80px),
+  space-96 : remify(96px),
+  space-112: remify(112px),
+  space-128: remify(128px),
+  space-144: remify(144px),
+  space-160: remify(160px),
+  space-176: remify(176px),
+  space-192: remify(192px),
+  space-208: remify(208px),
+  space-224: remify(224px),
+  space-240: remify(240px),
+  space-256: remify(256px),
+  space-288: remify(288px),
+  space-320: remify(320px),
+  space-384: remify(384px)
+);
+
+// usage
+// margin-top: spacing(space-4);

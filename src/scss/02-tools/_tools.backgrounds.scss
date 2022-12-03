@@ -1,0 +1,28 @@
+/*------------------------------------*\
+    Background gradient top to bottom
+\*------------------------------------*/
+@mixin bg-gradient-t2b($start-colour, $end-colour) {
+    background-color: $start-colour;
+    background: -webkit-gradient(linear, left top, left bottom, from($start-colour), to($end-colour));
+    background: -webkit-linear-gradient(top, $start-colour, $end-colour);
+    background:    -moz-linear-gradient(top, $start-colour, $end-colour);
+    background:     -ms-linear-gradient(top, $start-colour, $end-colour);
+    background:      -o-linear-gradient(top, $start-colour, $end-colour);
+    background:         linear-gradient(to bottom, $start-colour, $end-colour);
+    filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$start-colour}', end-colourStr='#{$end-colour}');
+}
+
+/*------------------------------------*\
+    Background gradient left to right
+\*------------------------------------*/
+@mixin bg-gradient-l2r($start-colour, $end-colour) {
+    background-color: $start-colour;
+    background: -webkit-gradient(linear, left top, right top, from($start-colour), to($end-colour));
+    background: -webkit-linear-gradient(left, $start-colour, $end-colour);
+    background:    -moz-linear-gradient(left, $start-colour, $end-colour);
+    background:     -ms-linear-gradient(left, $start-colour, $end-colour);
+    background:      -o-linear-gradient(left, $start-colour, $end-colour);
+    background:         linear-gradient(to right, $start-colour, $end-colour);
+    filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$start-colour}', end-colourStr='#{$end-colour}', gradientType='1');
+}
+

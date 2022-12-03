@@ -1,0 +1,10 @@
+@use "sass:math";
+
+@function remify($pixels) {
+  $tempCalc: math.div($pixels, 16px);
+  @return $tempCalc * 1rem;
+}
+
+:root {
+  --wrapper: #{remify(1920px)};
+}

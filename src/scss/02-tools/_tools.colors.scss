@@ -1,0 +1,21 @@
+// // Source: '_settings.colors.scss'
+// // URL for doc: https://codepen.io/jakealbaugh/post/using-sass-functions-to-access-complex-variable-maps
+
+@function hex-to-rgb($hexcolor) {
+  $red:red($hexcolor);
+  $green:green($hexcolor);
+  $blue:blue($hexcolor);
+  $alpha:alpha($hexcolor);
+  @return unquote("#{$red}, #{$green}, #{$blue}");
+}
+
+@function useRGB($var) {
+  @return unquote("RGB(var(#{$var}))");
+  // Cause Node SASS doesn't understand if you write 
+  // color: rgb(var(--varname);
+  // you have to use RGB(var(--varname);
+}
+
+@function useHSL($var) {
+  @return unquote("HSL(var(#{$var}))");
+}

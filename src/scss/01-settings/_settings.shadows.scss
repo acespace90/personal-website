@@ -1,0 +1,94 @@
+// Usage: @include elevation("level-2", var(--secondary-100) );
+
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+
+$shadows: (
+
+  level-100: (
+    shadow-1: (
+      values: 0px 4px 4px -2px,
+      opacity: .08
+    ),
+    shadow-2: (
+      values: 0px 2px 4px -2px,
+      opacity: .12
+    )
+  ),
+
+  level-200: (
+    shadow-1: (
+      values: 0px 8px 8px -4px,
+      opacity: .08
+    ),
+    shadow-2: (
+      values: 0px 4px 6px -4px,
+      opacity: .12
+    )
+  ),
+
+  level-300: (
+    shadow-1: (
+      values: 0px 8px 16px -6px,
+      opacity: .08
+    ),
+    shadow-2: (
+      values: 0px 6px 8px -6px,
+      opacity: .12
+    )
+  ),
+
+  level-400: (
+    shadow-1: (
+      values: 0px 8px 24px -4px,
+      opacity: .08
+    ),
+    shadow-2: (
+      values: 0px 6px 12px -6px,
+      opacity: .12
+    )
+  ),
+
+  level-500: (
+    shadow-1: (
+      values: 0px 10px 32px -4px,
+      opacity: .1
+    ),
+    shadow-2: (
+      values: 0px 6px 14px -6px,
+      opacity: .12
+    )
+  ),
+
+  level-600: (
+    shadow-1: (
+      values: 0px 12px 42px -4px,
+      opacity: .12
+    ),
+    shadow-2: (
+      values: 0px 8px 18px -6px,
+      opacity: .12
+    )
+  ),
+
+  level-700: (
+    shadow-1: (
+      values: 0px 14px 64px -4px,
+      opacity: .08
+    ),
+    shadow-2: (
+      values: 0px 8px 22px -6px,
+      opacity: .12
+    )
+  ),
+
+  level-800: (
+    shadow-1: (
+      values: 0px 8px 88px -4px,
+      opacity: .14
+    ),
+    shadow-2: (
+      values: 0px 8px 28px -6px,
+      opacity: .12
+    )
+  )
+);

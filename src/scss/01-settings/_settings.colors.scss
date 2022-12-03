@@ -1,0 +1,29 @@
+/*------------------------------------*\
+  Important! 
+  Everytime you need to add a color in this file, remember to 
+  add it also into its config.json file in:
+  src/pattern-library/01-design-tokens/colors/colors.config.js
+\*------------------------------------*/
+
+@import "../02-tools/tools.colors.scss";
+
+:root {
+  --base-100     : 0, 0%, 100%;
+  --primary-100  : 245, 37%, 17%;
+  --highlight-100: 174, 100%, 44%;
+  --accent-100   : 347, 89%, 48%;
+  --grey         : 240, 2%, 92%;
+  --geyser-blue  : 210, 21%, 85%;
+}
+
+/*------------------------------------*
+  SASS map for generating utility classes
+*------------------------------------*/
+$colors: (
+  base-100     : var(--base-100),
+  primary-100  : var(--primary-100),
+  highlight-100: var(--highlight-100),
+  accent-100   : var(--accent-100),
+  "grey"       : var(--grey),
+  geyser-blue  : var(--geyser-blue),
+)

@@ -1,0 +1,130 @@
+@import "../01-settings/settings.breakpoints";
+@import "../02-tools/tools.mixins";
+@import "../02-tools/tools.map-deep-get";
+@import "../02-tools/tools.breakpoints";
+@import "../02-tools/tools.typo";
+
+/*------------------------------------*
+  TYPOGRAPHY
+*------------------------------------*/
+@mixin typo-tokens($prefix: '-', $font-family: $primary-font-scale) {
+
+  @if $font-family == $primary-font-scale {
+    @each $name, $value in $primary-font-scale {
+      @if $name != 'weights' { // Excludes weights map
+        &#{$prefix}#{$name} {
+          @include font-scale($name);
+        }
+      }
+    }
+  }
+
+  @if $font-family == $secondary-font-scale {
+    @each $name, $value in $secondary-font-scale {
+      @if $name != 'weights' { // Excludes weights map
+        &#{$prefix}#{$name} {
+          @include font-scale($name, $font-family: $font-secondary);
+        }
+      }
+    }
+  }
+  
+}
+
+/*------------------------------------*
+  FONT WEIGHTS
+*------------------------------------*/
+@mixin font-weight-tokens($prefix: '-', $font-family: $primary-font-scale) {
+  @each $name, $value in map-deep-get($font-family, 'weights') {
+    &#{$prefix}#{$name} {
+      font-weight: $value;
+    }
+  }
+}
+
+/*------------------------------------*
+  COLORS
+*------------------------------------*/
+@mixin color-tokens($attributes: ('color'), $prefix: '-') {
+  @each $name, $value in $colors {
+    &#{$prefix}#{$name} {
+      
+      @each $attribute in $attributes {
+        #{$attribute}: hsl($value);
+      }
+
+    }
+  }
+}
+
+/*------------------------------------*
+  SPACINGS
+*------------------------------------*/
+@mixin spacing-tokens($className: '', $attributes: ('padding'), $prefix: '-', $breakpoints: () ) {
+  @each $name, $value in $spacing-units {
+    [class~="#{$className}#{$prefix}#{$name}"] {
+      @each $attribute in $attributes {
+        #{$attribute}: $value;
+      }
+    }
+  }
+
+  @if variable-exists(breakpoints) {
+    @each $item in $breakpoints {
+      @each $name, $value in $spacing-units {
+        [class~="#{$className}#{$prefix}#{$name}\@#{$item}"] {
+          @if $item == "md" {
+            @include min-screen(bp(medium)) {
+              @each $attribute in $attributes {
+                #{$attribute}: $value;
+              }
+            }
+          }
+          @if $item == "lg" {
+            @include min-screen(bp(large)) {
+              @each $attribute in $attributes {
+                #{$attribute}: $value;
+              }
+            }
+          }
+          @if $item == "xl" {
+            @include min-screen(bp(xlarge)) {
+              @each $attribute in $attributes {
+                #{$attribute}: $value;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+/*------------------------------------*
+  RADIUSES
+*------------------------------------*/
+@mixin radius-tokens($attributes: ('border-radius'), $prefix: '-') {
+  @each $name, $value in $radius-units {
+    &#{$prefix}#{$name} {
+      
+      @each $attribute in $attributes {
+        #{$attribute}: $value;
+      }
+      
+    }
+  }
+}
+
+/*------------------------------------*
+  SHADOWS
+*------------------------------------*/
+@mixin shadow-tokens($attribute: 'box-shadow', $prefix: '-', $color: var(--primary-100)) {
+  @each $name, $shadow in $shadows {
+    &#{$prefix}#{$name} {
+      #{$attribute}: 
+        map-deep-get($shadows, $name, "shadow-2", "values") HSLA($color, map-deep-get($shadows, $name, "shadow-2", "opacity")),
+        map-deep-get($shadows, $name, "shadow-1", "values") HSLA($color, map-deep-get($shadows, $name, "shadow-1", "opacity"));
+    }
+  }
+}

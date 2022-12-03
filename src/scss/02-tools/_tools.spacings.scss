@@ -1,0 +1,4 @@
+@function spacing($space-value){
+	$space-value: #{map-get($spacing-units, $space-value)};
+	@return $space-value;
+}

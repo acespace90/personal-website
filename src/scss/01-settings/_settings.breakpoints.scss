@@ -1,0 +1,16 @@
+@use "sass:math";
+
+@function emify($pixels) {
+  $tempCalc: math.div($pixels, 16px);
+  @return $tempCalc * 1em;
+}
+
+$breakpoints: (
+	xsmall : emify(375px),
+	small  : emify(428px), 
+	medium : emify(748px), 
+	large  : emify(1024px),
+	xlarge : emify(1280px),
+	2xlarge: emify(1536px),
+	3xlarge: emify(1920px)
+);

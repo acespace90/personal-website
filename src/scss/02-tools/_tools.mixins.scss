@@ -1,0 +1,38 @@
+@use "sass:math";
+
+/*------------------------------------*\
+    Px to Em
+\*------------------------------------*/
+@function emify($pixels) {
+  $tempCalc: math.div($pixels, 16px);
+  @return $tempCalc * 1em;
+}
+
+/*------------------------------------*\
+    Px to Rem
+\*------------------------------------*/
+@function remify($pixels) {
+  $tempCalc: math.div($pixels, 16px);
+  @return $tempCalc * 1rem;
+}
+
+/*------------------------------------*
+  Outline
+*------------------------------------*/
+@mixin outline {
+  outline: remify(1px) solid useHSL(--accent-100);
+}
+
+/*------------------------------------*
+  Aspect ratio fallback
+*------------------------------------*/
+@mixin aspect-ratio-fallback {
+  @supports not (aspect-ratio: 16 / 9) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+  }
+}

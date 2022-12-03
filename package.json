@@ -1,0 +1,30 @@
+{
+  "name": "antoniomatera.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run sass & eleventy --serve & npm run watch",
+    "sass": "sass src/scss:assets/css",
+    "watch": "npm run watch:css",
+    "watch:css": "onchange 'src/scss/**/*.scss' 'src/scss' -- npm run sass",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acespace90/personal-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acespace90/personal-website/issues"
+  },
+  "homepage": "https://github.com/acespace90/personal-website#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "onchange": "^7.1.0",
+    "sass": "^1.56.1",
+    "sass-mediaqueries": "^1.6.1"
+  }
+}

@@ -1,0 +1,12 @@
+@mixin shadow ($level, $color: var(--primary-100) ) {
+  box-shadow: 
+    map-deep-get($shadows, $level, "shadow-2", "values") hsla($color, map-deep-get($shadows, $level, "shadow-2", "opacity")),
+    map-deep-get($shadows, $level, "shadow-1", "values") hsla($color, map-deep-get($shadows, $level, "shadow-1", "opacity"));
+}
+
+// Usage
+/*
+.test {
+  @include shadow(level-800);
+}
+*/
