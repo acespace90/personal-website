@@ -1,18 +1,17 @@
 ---
 layout: 'base.njk' 
-title: Posts | Antonio Matera
+title: Posts
 ---
+{# {% import "post.njk" as post %} #}
 
 <div class="o-small-container u-mt-space-2xl">
-  <h1>Posts</h1>
+  <h1>{{ title }}</h1>
 </div>
 
 <div class="o-small-container">
   <div class="o-grid o-grid--1-col u-mt-space-2xl">
-    {% include "post.njk" %}
-    {% include "post.njk" %}
-    {% include "post.njk" %}
-    {% include "post.njk" %}
-    {% include "post.njk" %}
+    {%- for item in collections.post -%}
+      {% include "post.njk" %}
+    {%- endfor -%}
   </div>
 </div>

@@ -1,7 +1,8 @@
 ---
 layout: 'base.njk' 
-title: Home | Antonio Matera
+title: Home
 ---
+{# {% import "post.njk" as post %} #}
 
 <div class="o-small-container">
   {% include "opening.njk" %}
@@ -15,7 +16,9 @@ title: Home | Antonio Matera
   </div>
 
   <div class="o-grid o-grid--2-cols">
-    {% include "post.njk" %}
-    {% include "post.njk" %}
+    {% set latest_posts = collections.post | reverse %}
+    {% for item in latest_posts.slice(0, 2) %}
+      {% include "post.njk" %}
+    {% endfor %}
   </div>
 </div>

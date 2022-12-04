@@ -136,7 +136,7 @@ html {
 h1,
 .typo-level-5 {
   font-size: var(--typo-5);
-  line-height: 120%;
+  line-height: 110%;
 }
 
 h2,
@@ -183,6 +183,14 @@ p + p {
 
 a {
   color: HSL(var(--site-text));
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: var(--typo-0);
+  line-height: 150%;
 }
 
 button {
@@ -233,6 +241,39 @@ svg {
   .o-grid--2-cols > * {
     grid-column: span 6;
   }
+}
+
+.o-paper h1 {
+  margin-bottom: var(--space-3xs);
+}
+.o-paper .metadata {
+  margin-bottom: var(--space-xl);
+  color: HSL(var(--gray-80));
+}
+.dark .o-paper .metadata {
+  color: HSL(var(--gray-20));
+}
+.o-paper .metadata * {
+  color: currentColor;
+}
+.o-paper .metadata span {
+  display: block;
+}
+.o-paper h2, .o-paper h3, .o-paper h4 {
+  margin-bottom: var(--space-xs);
+}
+.o-paper p, .o-paper ul, .o-paper ol {
+  margin-bottom: var(--space-s);
+}
+.o-paper ul, .o-paper ol {
+  list-style: initial;
+  list-style-position: inside;
+}
+.o-paper img, .o-paper picture {
+  margin: var(--space-m) 0;
+}
+.o-paper img:first-of-type, .o-paper picture:first-of-type {
+  margin-top: 0;
 }
 
 .o-antipodes {
@@ -364,6 +405,7 @@ svg {
   padding: var(--space-s);
   position: relative;
   transition: 0.3s box-shadow ease;
+  height: 100%;
 }
 .dark .c-post {
   background-color: HSL(var(--gray-90));
@@ -386,14 +428,21 @@ svg {
   text-decoration: underline;
 }
 
-.c-post__date {
+.c-post__date,
+.c-post__tags {
+  display: inline-block;
   font-size: var(--typo--1);
   line-height: 120%;
   color: HSL(var(--gray-80));
   margin-top: var(--space-3xs);
 }
-.dark .c-post__date {
+.dark .c-post__date,
+.dark .c-post__tags {
   color: HSL(var(--gray-20));
+}
+
+.c-post__tags::before {
+  content: " | ";
 }
 
 .c-footer {

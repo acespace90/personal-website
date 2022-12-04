@@ -3,6 +3,7 @@
   padding: var(--space-s);
   position: relative;
   transition: .3s box-shadow ease;
+  height: 100%;
 
   .dark & {
     background-color: useHSL(--gray-90);
@@ -27,14 +28,19 @@
   text-decoration: underline;
 }
 
-.c-post__date {
+.c-post__date,
+.c-post__tags {
+  display: inline-block;
   @include typo-level--1;
   color: useHSL(--gray-80);
   margin-top: var(--space-3xs);
-
 
   .dark & {
     color: useHSL(--gray-20);
   }
 
+}
+
+.c-post__tags::before {
+  content: ' | ';
 }

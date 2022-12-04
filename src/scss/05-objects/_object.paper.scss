@@ -1,31 +1,46 @@
 .o-paper {
 
-  // h1,
-  // .h1 {
-  //   font-size: var(--typo-5);
-  //   font-weight: bold;
-  //   line-height: 100%;
-  // }
+  h1 {
+    margin-bottom: var(--space-3xs);
+  }
 
-  // h2,
-  // .h2 {
-  //   font-size: var(--typo-4);
-  //   font-weight: bold;
-  //   line-height: 125%;
-  // }
+  .metadata {
+    margin-bottom: var(--space-xl);
+    color: useHSL(--gray-80);
 
-  // h3,
-  // .h3 {
-  //   font-size: var(--typo-3);
-  //   font-weight: bold;
-  //   line-height: 125%;
-  // }
+    .dark & {
+      color: useHSL(--gray-20);
+    }
 
-  // h4,
-  // .h4 {
-  //   font-size: var(--typo-2);
-  //   font-weight: bold;
-  //   line-height: 125%;
-  // }
+    & * {
+      color: currentColor;
+    }
+
+    span {
+      display: block;
+    }
+
+  }
+
+  h2, h3, h4 {
+    margin-bottom: var(--space-xs);
+  }
+
+  p, ul, ol {
+    margin-bottom: var(--space-s);
+  }
+
+  ul, ol {
+    list-style: initial;
+    list-style-position: inside;
+  }
+
+  img, picture {
+    margin: var(--space-m) 0;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
 
 }
