@@ -131,7 +131,6 @@ html {
   color: HSL(var(--site-text));
   background-color: HSL(var(--site-bg));
   scroll-behavior: smooth;
-  transition: 0.3s ease;
 }
 
 h1,
@@ -221,6 +220,10 @@ svg {
   display: grid;
   gap: var(--grid-gutter);
   grid-template-columns: repeat(var(--grid-columns), 1fr);
+}
+
+.o-grid--1-col > * {
+  grid-column: span 12;
 }
 
 .o-grid--2-cols > * {
@@ -417,6 +420,42 @@ svg {
   height: auto;
   overflow: visible;
   z-index: 900;
+}
+
+.u-mt-space-3xs {
+  margin-top: var(--space-3xs);
+}
+
+.u-mt-space-2xs {
+  margin-top: var(--space-2xs);
+}
+
+.u-mt-space-xs {
+  margin-top: var(--space-xs);
+}
+
+.u-mt-space-s {
+  margin-top: var(--space-s);
+}
+
+.u-mt-space-m {
+  margin-top: var(--space-m);
+}
+
+.u-mt-space-l {
+  margin-top: var(--space-l);
+}
+
+.u-mt-space-xl {
+  margin-top: var(--space-xl);
+}
+
+.u-mt-space-2xl {
+  margin-top: var(--space-2xl);
+}
+
+.u-mt-space-3xl {
+  margin-top: var(--space-3xl);
 }
 
 /*# sourceMappingURL=main.css.map */
