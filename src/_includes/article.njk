@@ -4,6 +4,10 @@ layout: 'base.njk'
 
 <div class="o-small-container u-mt-space-2xl">
   <div class="o-paper">
+    <h1>{{ title }}</h1>
+    <div class="metadata">
+      <p>Posted on <time datetime="2022-12-4">4 December 2022</time> in <a href="#">{{ tags }}</a></p>
+    </div>
     {{ content | safe }}
   </div>
 </div>
