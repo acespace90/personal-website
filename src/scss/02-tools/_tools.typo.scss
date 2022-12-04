@@ -1,28 +1,39 @@
-// Source: '_settings.typo.scss'
-// Doc for postcss-responsive-type: https://www.npmjs.com/package/postcss-responsive-type
+@mixin typo-level--2 {
+  font-size: var(--typo--2);
+  line-height: 120%;
+}
 
-/*------------------------------------*\
-  Responsive typo management
-\*------------------------------------*/
-@mixin font-scale($size: level-3, $font-family: $font-primary, $weight: false, $min-range: bp(small), $max-range: bp(xlarge)) {
-  font-family: $font-family;
+@mixin typo-level--1 {
+  font-size: var(--typo--1);
+  line-height: 120%;
+}
 
-  @if $font-family == $font-primary {
-    font-size: responsive remify(map-deep-get($primary-font-scale, $size, "mobile", "fs")) remify(map-deep-get($primary-font-scale, $size, "desktop", "fs"));
-    font-range: $min-range $max-range;
-    line-height: map-deep-get($primary-font-scale, $size, "lh");
-    @if $weight {
-      font-weight: map-deep-get($primary-font-scale, 'weights', $weight);
-    }
-  }
+@mixin typo-level-0 {
+  font-size: var(--typo-0);
+  line-height: 150%;
+}
 
-  @if $font-family == $font-secondary {
-    font-size: responsive remify(map-deep-get($secondary-font-scale, $size, "mobile", "fs")) remify(map-deep-get($secondary-font-scale, $size, "desktop", "fs"));
-    font-range: $min-range $max-range;
-    line-height: map-deep-get($secondary-font-scale, $size, "lh");
-    @if $weight {
-      font-weight: map-deep-get($secondary-font-scale, 'weights', $weight);
-    }
-  }
+@mixin typo-level-1 {
+  font-size: var(--typo-1);
+  line-height: 120%;
+}
 
+@mixin typo-level-2 {
+  font-size: var(--typo-2);
+  line-height: 120%;
+}
+
+@mixin typo-level-3 {
+  font-size: var(--typo-3);
+  line-height: 120%;
+}
+
+@mixin typo-level-4 {
+  font-size: var(--typo-4);
+  line-height: 120%;
+}
+
+@mixin typo-level-5 {
+  font-size: var(--typo-5);
+  line-height: 120%;
 }

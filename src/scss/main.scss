@@ -47,6 +47,7 @@
 // Wrappers, layout systems and media object are perfect candidates.
 @import "05-objects/object.grid.scss";
 @import "05-objects/object.paper.scss";
+@import "05-objects/object.antipodes.scss";
 
 // LAYOUTS
 
@@ -64,6 +65,8 @@
 @import "08-components/components.header.scss";
 @import "08-components/components.nav.scss";
 @import "08-components/components.icon.scss";
+@import "08-components/components.opening.scss";
+@import "08-components/components.post.scss";
 
 // TRUMPS
 // It is inelegant and heavy- handed, and contains utility and helper classes, hacks and overrides.

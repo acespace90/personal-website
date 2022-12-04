@@ -1,0 +1,8 @@
+.o-antipodes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: spacing(space-16);
+  margin: var(--space-s) 0;
+}

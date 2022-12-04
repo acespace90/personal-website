@@ -1,3 +1,7 @@
 *:focus {
   @include outline;
 }
+
+a {
+  color: useHSL(--site-text);
+}

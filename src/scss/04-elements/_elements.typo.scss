@@ -1,0 +1,36 @@
+h1,
+.typo-level-5 {
+  @include typo-level-5;
+}
+
+h2,
+.typo-level-4 {
+  @include typo-level-4;
+}
+
+h3,
+.typo-level-3 {
+  @include typo-level-3;
+}
+
+h4,
+.typo-level-2 {
+  @include typo-level-2;
+}
+
+p,
+.typo-level-0 {
+  @include typo-level-0;
+}
+
+p + p {
+  margin-top: var(--space-s);
+}
+
+.typo-level--1 {
+  @include typo-level--1;
+}
+
+.typo-level--2 {
+  @include typo-level--2;
+}

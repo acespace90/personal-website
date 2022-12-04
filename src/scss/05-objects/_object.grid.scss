@@ -4,8 +4,26 @@
   margin-inline: auto;
 }
 
+.o-small-container {
+  max-width: var(--small-wrapper);
+  padding-inline: var(--grid-gutter);
+  margin-inline: auto;
+}
+
 .o-grid {
   display: grid;
   gap: var(--grid-gutter);
   grid-template-columns: repeat(var(--grid-columns), 1fr);
+}
+
+.o-grid--2-cols {
+
+  & > * {
+    grid-column: span 12;
+    
+    @include min-screen(bp(medium)) {
+      grid-column: span 6;
+    }
+  }
+  
 }
