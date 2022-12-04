@@ -46,3 +46,14 @@
   cursor: pointer;
   color: useHSL(--site-text);
 }
+
+/*------------------------------------*
+  Footer modifier
+*------------------------------------*/
+.c-nav--footer {
+
+  .c-nav__item {
+    text-transform: none;
+  }
+  
+}

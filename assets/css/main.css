@@ -298,6 +298,13 @@ svg {
   color: HSL(var(--site-text));
 }
 
+/*------------------------------------*
+  Footer modifier
+*------------------------------------*/
+.c-nav--footer .c-nav__item {
+  text-transform: none;
+}
+
 .c-icon {
   fill: currentColor;
 }
@@ -387,6 +394,12 @@ svg {
 }
 .dark .c-post__date {
   color: HSL(var(--gray-20));
+}
+
+.c-footer {
+  padding-top: var(--space-s);
+  padding-bottom: var(--space-s);
+  margin-top: var(--space-m);
 }
 
 .u-visuallyhidden {
