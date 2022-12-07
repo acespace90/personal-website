@@ -429,7 +429,7 @@ svg {
 }
 
 .c-post__date,
-.c-post__tags {
+.c-post__tag {
   display: inline-block;
   font-size: var(--typo--1);
   line-height: 120%;
@@ -437,11 +437,11 @@ svg {
   margin-top: var(--space-3xs);
 }
 .dark .c-post__date,
-.dark .c-post__tags {
+.dark .c-post__tag {
   color: HSL(var(--gray-20));
 }
 
-.c-post__tags::before {
+.c-post__tag::before {
   content: " | ";
 }
 

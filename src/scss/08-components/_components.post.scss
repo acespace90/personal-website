@@ -29,7 +29,7 @@
 }
 
 .c-post__date,
-.c-post__tags {
+.c-post__tag {
   display: inline-block;
   @include typo-level--1;
   color: useHSL(--gray-80);
@@ -41,6 +41,6 @@
 
 }
 
-.c-post__tags::before {
+.c-post__tag::before {
   content: ' | ';
 }

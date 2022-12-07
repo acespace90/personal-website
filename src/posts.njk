@@ -10,7 +10,7 @@ title: Posts
 
 <div class="o-small-container">
   <div class="o-grid o-grid--1-col u-mt-space-2xl">
-    {%- for item in collections.post -%}
+    {%- for item in collections.post | reverse -%}
       {% include "post.njk" %}
     {%- endfor -%}
   </div>
