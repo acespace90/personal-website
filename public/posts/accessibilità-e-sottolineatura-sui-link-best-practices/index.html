@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <title>Accessibilità e sottolineatura sui link: best practices | Antonio Matera</title>
+</head>
+<body>
+
+  <a href="#main" class="u-skip-link">Skip to content</a>
+
+  <header class="c-header o-container">
+  
+
+<nav class="c-nav">
+  <a href="/" class="c-nav__logo">
+    <span>Antonio</span> <span>Matera</span>
+    <p class="u-visuallyhidden">Homepage</p>
+  </a>
+  <a href="/posts" class="c-nav__item">Posts</a>
+  <a href="https://twitter.com/antonio_matera_" class="c-nav__item">Twitter</a>
+  <button class="c-nav__theme-btn js-theme-switcher" aria-label="Dark mode toggle">
+    
+<svg class="c-icon c-icon--24" aria-hidden="true" focusable="false">
+  <use xlink:href="#ic-brightness-medium-24px"></use>
+</svg>  
+
+  </button>
+</nav>
+</header>
+
+  <main id="main">
+    
+<div class="o-small-container u-mt-space-2xl">
+  <div class="o-paper">
+    <h1>Accessibilità e sottolineatura sui link: best practices</h1>
+    <div class="metadata">
+      <p>Posted on <time datetime="2022-12-4">4 December 2022</time> in Accessibilità</p>
+    </div>
+    <p>In questo post voglio approfondire il tema sulle <strong>sottolineature dei collegamenti ipertestuali</strong> (link).</p>
+<p><strong>I browser sottolineano i link per impostazione predefinita.</strong></p>
+<p>Ciò nonostante spesso riteniamo che le sottolineature dei link abbiano una resa estetica non ottimale e pertanto tendiamo a rimuoverle tramite CSS, ma la maggior parte delle volte questa non è una buona idea.</p>
+<p>Quindi, quali sono le best practices?</p>
+<h2><strong>TL; DR</strong></h2>
+<p>Per un sito web accessibile e usabile è buona regola <strong>non rimuovere la sottolineatura sui collegamenti ipertestuali,</strong> iin particolare all’interno dei paragrafi di testo, all’interno di una pagina.</p>
+<h2><strong>Ok, vi dico di più</strong></h2>
+<p>Un esempio concreto? Gli utenti con <strong>daltonismo</strong> o <strong>ipovedenti</strong> potrebbero avere difficoltà a distinguere i collegamenti dal testo normale quando manca la sottolineatura.</p>
+<p><strong>Rimuovendo la sottolineatura</strong> e utilizzando come unico parametro distintivo il colore <strong>si rischia di commettere un errore</strong> di progettazione, privando l’utente dei riferimenti visivi utili al riconoscimento immediato dei collegamenti ipertestuali.<br>
+A tal proposito <strong><a href="https://www.w3.org/TR/WCAG20-TECHS/F73.html">le linee guida WCAG</a></strong> suggeriscono di non fare affidamento solo sul colore per distinguere i link e consigliano inoltre di esplicitare le sottolineature.</p>
+<h2><strong>Eccezioni</strong></h2>
+<p>Tuttavia, ci sono delle <strong>eccezioni</strong> per cui le sottolineature sui link potrebbero essere omesse.<br>
+Nonostante gli utenti siano abituati a vedere i link sottolineati nei contenuti di una pagina web, lo sono anche a vedere i <strong>tab</strong> e le <strong>aree di navigazione</strong> senza sottolineature.</p>
+<p>Ci sono infatti due casi principali in cui è possibile eliminarle: <strong>menu di navigazione</strong> e altri <strong>elenchi di collegamenti,</strong> a patto che il design della pagina renda evidente la funzione dell’area.</p>
+<p><img src="/assets/img/uploads/tablist.png" alt="Componente tabs HTML"></p>
+<p><img src="/assets/img/uploads/nn-group-navigation.png" alt="Menù di navigazione"></p>
+<h2><strong>L’erba del vicino è veramente più verde della nostra?</strong></h2>
+<p>Molti dei siti web dei brand più noti non utilizzano le sottolineature per i link. Le ragioni però possono essere molteplici.<br>
+Sicuramente la progettazione dei loro siti è il risultato di precisi ragionamenti, tuttavia la loro notorietà gli permette di sorvolare o alleggerire determinati accorgimenti tecnici.</p>
+<p>Questo non deve farci pensare che l’accessibilità sia un vezzo accessorio da cui farsi guidare a piacimento, bensì una summa di regole inclusive fondamentali per permettere a chiunque di accedere alle opportunità offerte dalla rete.</p>
+<h2><strong>Opzioni di stile</strong></h2>
+<p>Come già detto, per impostazione predefinita i <strong>collegamenti ipertestuali sono sottolineati dai browser.</strong> Questa resta certamente l’<strong>opzione consigliata</strong> oltre che a costo zero.<br>
+Ma se proprio abbiamo la necessità di disabilitare le sottolineature, dovremmo considerare di aggiungere un altro elemento di formattazione per distinguere i collegamenti ipertestuali dal resto del testo.</p>
+<p><strong>Evidenziazione</strong>Da alcuni studi è emerso che <strong>il testo evidenziato è un’ottima alternativa</strong>.<br>
+Questa può essere una tecnica efficace, a condizione che il <strong>contrasto</strong> tra il testo del collegamento e il colore di sfondo sia <strong>sufficientemente elevato</strong>.</p>
+<p><strong>Bordi</strong>I <strong>bordi inferiori</strong> offrono anche più scelta nel colore (non è necessario che corrisponda al colore del testo) e nello stile del bordo stesso (punteggiato, tratteggiato, doppio, più spesso, più sottile).</p>
+<p><em>N.B: I bordi tratteggiati possono confondersi con l’elemento HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr"><abbr> che rappresenta un’abbreviazione o un acronimo</a>.</em></p>
+<p><strong>Icone</strong>L’utilizzo delle icone può rappresentare un altro valido metodo per rappresentare un link quando rimuoviamo la sottolineatura. L’icona in questo caso però deve fungere da <strong>elemento di accompagnamento</strong> del testo e <strong>non essere utilizzata da sola</strong> per rappresentare un collegamento.</p>
+<p><img src="/assets/img/uploads/link-with-chevron.png" alt="Link accompagnato da un'icona"></p>
+<h2><strong>Conclusioni</strong></h2>
+<p>Secondo le linee guida sull’usabilità in merito all’aspetto dei link, la navigazione in pagina e la trovabilità dei collegamenti ipertestuali fondamentali è supportata maggiormente se seguiamo le best practices di progettazione.</p>
+<p>In definitiva, il consiglio è: <strong>utilizzate le sottolineature per far risaltare i collegamenti ipertestuali.</strong><br>
+Altre opzioni di stile possono funzionare, ma non sono universali e a volte richiedono di essere apprese dagli utenti.<br>
+Il nostro lavoro, come buoni designer, è di ridurre il carico cognitivo e non aumentarlo.</p>
+<h2><strong>Risorse</strong></h2>
+<p>Ecco le fonti preziose da cui ho attinto per la scrittura di questo blog post:</p>
+<ul>
+<li><a href="https://webaim.org/techniques/hypertext/link_text">Links and Hypertext – WebAIM</a></li>
+<li><a href="https://adrianroselli.com/2016/06/on-link-underlines.html">On Link Underlines – Adrian Roselli</a></li>
+<li><a href="https://www.webaxe.org/keep-the-underline-text-links/">Keep the Underline – WebAxe.org</a></li>
+<li><a href="https://www.nngroup.com/articles/guidelines-for-visualizing-links/">Guidelines for Visualizing Links – Nielsen Norman Group</a></li>
+<li>F73: <a href="https://www.w3.org/TR/WCAG20-TECHS/F73.html">Failure of Success Criterion 1.4.1</a> due to creating links that are not visually evident without color vision (W3C WCAG 2.0)</li>
+</ul>
+
+  </div>
+</div>
+  </main>
+
+  <footer class="c-footer o-container">
+  <nav class="c-nav c-nav--footer">
+  <a href="https://github.com/acespace90" class="c-nav__item">Github</a>
+  <a href="https://www.linkedin.com/in/antoniomatera/" class="c-nav__item">Linkedin</a>
+  <a href="https://www.instagram.com/materantonio/" class="c-nav__item">Instagram</a>
+</nav>
+</footer>
+
+  <?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  style="display: none">
+
+  <symbol id="ic-brightness-medium-24px" viewBox="0 0 24 24">
+    <path d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18V6c3.31 0 6 2.69 6 6s-2.69 6-6 6z"/>
+  </symbol>
+
+</svg>
+
+  <script src="/assets/scripts/main.js"></script>
+
+  <script>
+    if(localStorage.getItem('dark') == "true") {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  </script>
+
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

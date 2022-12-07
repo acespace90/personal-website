@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*------------------------------------*
   Font family
 *------------------------------------*/
@@ -259,11 +260,12 @@ svg {
 .o-paper .metadata span {
   display: block;
 }
-.o-paper h2, .o-paper h3, .o-paper h4 {
+.o-paper h2, .o-paper h3, .o-paper h4, .o-paper h5, .o-paper h6 {
+  margin-top: var(--space-l);
   margin-bottom: var(--space-xs);
 }
 .o-paper p, .o-paper ul, .o-paper ol {
-  margin-bottom: var(--space-s);
+  margin-bottom: var(--space-m);
 }
 .o-paper ul, .o-paper ol {
   list-style: initial;
@@ -274,6 +276,23 @@ svg {
 }
 .o-paper img:first-of-type, .o-paper picture:first-of-type {
   margin-top: 0;
+}
+.o-paper blockquote {
+  position: relative;
+  border-left: 0.1875rem solid HSL(var(--site-text));
+  padding-left: var(--space-s);
+  margin: var(--space-m) 0;
+}
+.o-paper blockquote p:not(:last-of-type) {
+  font-size: var(--typo-0);
+  line-height: 150%;
+  font-style: italic;
+}
+.o-paper blockquote p:not(:last-of-type)::before {
+  content: "“";
+}
+.o-paper blockquote p:not(:last-of-type)::after {
+  content: "”";
 }
 
 .o-antipodes {

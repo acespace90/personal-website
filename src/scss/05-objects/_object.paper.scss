@@ -22,12 +22,13 @@
 
   }
 
-  h2, h3, h4 {
+  h2, h3, h4, h5, h6 {
+    margin-top: var(--space-l);
     margin-bottom: var(--space-xs);
   }
 
   p, ul, ol {
-    margin-bottom: var(--space-s);
+    margin-bottom: var(--space-m);
   }
 
   ul, ol {
@@ -41,6 +42,26 @@
     &:first-of-type {
       margin-top: 0;
     }
+  }
+
+  blockquote {
+    position: relative;
+    border-left: remify(3px) solid useHSL(--site-text);
+    padding-left: var(--space-s);
+    margin: var(--space-m) 0;
+
+    p:not(:last-of-type) {
+      @include typo-level-0;
+      font-style: italic;
+    }
+  }
+
+  blockquote p:not(:last-of-type)::before {
+    content: '\201C';
+  }
+
+  blockquote p:not(:last-of-type)::after {
+    content: '\201D';
   }
 
 }
