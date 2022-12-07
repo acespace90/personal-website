@@ -15,7 +15,8 @@
 
 }
 
-.c-post__click-area {
+.c-post__click-area:after {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -25,7 +26,6 @@
 
 .c-post__title {
   @include typo-level-1;
-  text-decoration: underline;
 }
 
 .c-post__date,
