@@ -387,6 +387,10 @@ svg {
   }
 }
 
+.c-opening__title {
+  font-size: var(--typo-4);
+}
+
 .c-opening__subtitle {
   font-size: var(--typo-2);
   line-height: 120%;
