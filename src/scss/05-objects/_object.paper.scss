@@ -6,6 +6,7 @@
 
   .metadata {
     margin-bottom: var(--space-xl);
+    margin-top: var(--space-2xs);
     color: useHSL(--gray-80);
 
     .dark & {
@@ -14,10 +15,6 @@
 
     & * {
       color: currentColor;
-    }
-
-    span {
-      display: block;
     }
 
   }
@@ -64,4 +61,16 @@
     content: '\201D';
   }
 
+  iframe {
+    display: block;
+    margin: var(--space-m) auto;
+    width: 100%;
+    height: 50%;
+    aspect-ratio: 16 / 9;
+  }
+
+}
+
+.o-tag + .o-tag::before {
+  content: ', ';
 }

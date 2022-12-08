@@ -1,13 +1,15 @@
 ---
 layout: 'base.njk'
-date: "git Last Modified"
 ---
 
 <div class="o-small-container u-mt-space-2xl">
   <div class="o-paper">
     <h1>{{ title }}</h1>
     <div class="metadata">
-      <p>Postato il <time datetime="{{ datePost | postDate }}">{{ datePost | postDate }}</time> in {{ tag }}</p>
+      <p>
+        Postato il <time datetime="{{ date | postDate }}">{{ date | postDate }}</time> in 
+        {% for item in tag %}<span class="o-tag">{{ item }}</span>{% endfor %}
+      </p>
     </div>
     {{ content | safe }}
   </div>

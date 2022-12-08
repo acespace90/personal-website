@@ -13,6 +13,14 @@
     box-shadow: 0px 0px 20px 0px #0000001a;
   }
 
+  &:focus-within {
+    @include outline;
+  }
+
+}
+
+.c-post__click-area {
+  outline: none;
 }
 
 .c-post__click-area:after {
@@ -29,7 +37,7 @@
 }
 
 .c-post__date,
-.c-post__tag {
+.c-post__tags {
   display: inline-block;
   @include typo-level--1;
   color: useHSL(--gray-80);
@@ -41,6 +49,7 @@
 
 }
 
-.c-post__tag::before {
+.c-post__tags::before {
   content: ' | ';
 }
+

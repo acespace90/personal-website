@@ -23,7 +23,8 @@ p,
   @include typo-level-0;
 }
 
-p + p {
+p + p,
+h1 + p {
   margin-top: var(--space-s);
 }
 

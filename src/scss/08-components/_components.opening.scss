@@ -4,7 +4,7 @@
 
   @include min-screen(bp(medium)) {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     gap: var(--grid-gutter);
   }
@@ -19,6 +19,7 @@
   font-size: var(--typo-2);
   line-height: 120%;
   font-weight: bold;
+  margin-top: 0;
 }
 
 .c-opening__content {

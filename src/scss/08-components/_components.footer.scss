@@ -2,4 +2,10 @@
   padding-top: var(--space-s);
   padding-bottom: var(--space-s);
   margin-top: var(--space-m);
+
+  & p:first-child {
+    margin-right: auto;
+    @include typo-level--2;
+  }
+
 }
