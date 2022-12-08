@@ -1,15 +1,11 @@
+{% extends "_globals.njk" %}
+
+{% block html %}
 <!DOCTYPE html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  {% include "favicon.njk" %}
-  <title>{{ title }} | Antonio Matera</title>
-</head>
+
+{% include "_head.njk" %}
+
 <body>
 
   <a href="#main" class="u-skip-link">Vai al contenuto principale</a>
@@ -48,3 +44,4 @@
 
 </body>
 </html>
+{% endblock %}
