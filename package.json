@@ -5,10 +5,13 @@
   "main": "index.js",
   "scripts": {
     "dev": "npm run sass & eleventy --serve & npm run watch",
-    "sass": "sass src/scss:assets/css",
+    "sass": "npm run sass:dev & npm run sass:prod",
+    "sass:dev": "sass src/scss/main.scss:assets/css/main.css",
+    "sass:prod": "sass --style=compressed src/scss/main.scss:assets/css/main.min.css",
     "watch": "npm run watch:css",
     "watch:css": "onchange 'src/scss/**/*.scss' 'src/scss' -- npm run sass",
-    "build": "eleventy"
+    "build": "eleventy",
+    "localcms": "npx netlify-cms-proxy-server"
   },
   "repository": {
     "type": "git",
