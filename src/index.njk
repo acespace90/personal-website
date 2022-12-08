@@ -16,7 +16,7 @@ title: Home
 
   <div class="o-grid o-grid--2-cols">
     {% set latest_posts = collections.blog %}
-    {% for item in latest_posts.slice(0, 2) %}
+    {% for item in latest_posts.slice(0, 2) | reverse %}
       {% include "post.njk" %}
     {% endfor %}
   </div>
