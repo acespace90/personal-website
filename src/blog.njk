@@ -9,7 +9,7 @@ title: Blog
 
 <div class="o-small-container">
   <div class="o-grid o-grid--1-col u-mt-space-2xl">
-    {%- for item in collections.blog | reverse -%}
+    {%- for item in collections.blog -%}
       {% include "post.njk" %}
     {%- endfor -%}
   </div>
