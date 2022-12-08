@@ -12,11 +12,11 @@ title: Home
   
   <div class="o-antipodes">
     <h2 class="typo-level-2">Ultimi post</h2>
-    <a href="/posts" class="typo-level-0"><strong>Tutti i post</strong></a>
+    <a href="/blog" class="typo-level-0"><strong>Tutti i post</strong></a>
   </div>
 
   <div class="o-grid o-grid--2-cols">
-    {% set latest_posts = collections.post | reverse %}
+    {% set latest_posts = collections.blog | reverse %}
     {% for item in latest_posts.slice(0, 2) %}
       {% include "post.njk" %}
     {% endfor %}

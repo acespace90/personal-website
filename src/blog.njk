@@ -1,6 +1,6 @@
 ---
 layout: 'base.njk' 
-title: Posts
+title: Blog
 ---
 {# {% import "post.njk" as post %} #}
 
@@ -10,7 +10,7 @@ title: Posts
 
 <div class="o-small-container">
   <div class="o-grid o-grid--1-col u-mt-space-2xl">
-    {%- for item in collections.post | reverse -%}
+    {%- for item in collections.blog | reverse -%}
       {% include "post.njk" %}
     {%- endfor -%}
   </div>
