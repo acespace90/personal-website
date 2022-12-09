@@ -4,8 +4,20 @@
   margin-top: var(--space-m);
 
   & p:first-child {
-    margin-right: auto;
     @include typo-level--2;
+    flex: 1 0 100%;
+    text-align: right;
+    order: 2;
+    margin-top: var(--space-xs);
+
+    @include min-screen( remify(480px)) {
+      margin-right: auto;
+      flex: initial;
+      text-align: initial;
+      order: initial;
+      margin-top: 0;
+    }
+    
   }
 
 }

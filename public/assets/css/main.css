@@ -383,6 +383,9 @@ svg {
 /*------------------------------------*
   Footer modifier
 *------------------------------------*/
+.c-nav--footer {
+  flex-wrap: wrap;
+}
 .c-nav--footer .c-nav__item {
   text-transform: none;
 }
@@ -504,9 +507,21 @@ svg {
   margin-top: var(--space-m);
 }
 .c-footer p:first-child {
-  margin-right: auto;
   font-size: var(--typo--2);
   line-height: 120%;
+  flex: 1 0 100%;
+  text-align: right;
+  order: 2;
+  margin-top: var(--space-xs);
+}
+@media only screen and (min-width: 30rem) {
+  .c-footer p:first-child {
+    margin-right: auto;
+    flex: initial;
+    text-align: initial;
+    order: initial;
+    margin-top: 0;
+  }
 }
 
 .u-visuallyhidden {
