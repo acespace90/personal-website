@@ -23,10 +23,13 @@
   <script src="/assets/scripts/main.js"></script>
 
   <script>
+    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
     if(localStorage.getItem('dark') == "true") {
       document.documentElement.classList.add('dark');
+      metaThemeColor.setAttribute('content',  '#000000');
     } else {
       document.documentElement.classList.remove('dark');
+      metaThemeColor.setAttribute('content',  '#EEE2DA');
     }
   </script>
 
