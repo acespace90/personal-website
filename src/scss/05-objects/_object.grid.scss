@@ -12,8 +12,13 @@
 
 .o-grid {
   display: grid;
-  gap: var(--grid-gutter);
+  gap: calc(var(--grid-gutter) * 2) var(--grid-gutter);
   grid-template-columns: repeat(var(--grid-columns), 1fr);
+
+  @include min-screen(bp(medium)) {
+    gap: var(--grid-gutter);
+  }
+
 }
 
 .o-grid--1-col {

@@ -16,18 +16,18 @@ Ciò nonostante spesso riteniamo che le sottolineature dei link abbiano una resa
 
 Quindi, quali sono le best practices?
 
-## **TL; DR**
+<h2 aria-label="too long didn't read">TL;DR</h2>
 
 Per un sito web accessibile e usabile è buona regola **non rimuovere la sottolineatura sui collegamenti ipertestuali,** iin particolare all’interno dei paragrafi di testo, all’interno di una pagina.
 
-## **Ok, vi dico di più**
+## Ok, vi dico di più
 
 Un esempio concreto? Gli utenti con **daltonismo** o **ipovedenti** potrebbero avere difficoltà a distinguere i collegamenti dal testo normale quando manca la sottolineatura.
 
 **Rimuovendo la sottolineatura** e utilizzando come unico parametro distintivo il colore **si rischia di commettere un errore** di progettazione, privando l’utente dei riferimenti visivi utili al riconoscimento immediato dei collegamenti ipertestuali.\
 A tal proposito **[le linee guida WCAG](https://www.w3.org/TR/WCAG20-TECHS/F73.html)** suggeriscono di non fare affidamento solo sul colore per distinguere i link e consigliano inoltre di esplicitare le sottolineature.
 
-## **Eccezioni**
+## Eccezioni
 
 Tuttavia, ci sono delle **eccezioni** per cui le sottolineature sui link potrebbero essere omesse.\
 Nonostante gli utenti siano abituati a vedere i link sottolineati nei contenuti di una pagina web, lo sono anche a vedere i **tab** e le **aree di navigazione** senza sottolineature.
@@ -38,14 +38,14 @@ Ci sono infatti due casi principali in cui è possibile eliminarle: **menu di n
 
 ![Menù di navigazione](/assets/img/uploads/nn-group-navigation.png)
 
-## **L’erba del vicino è veramente più verde della nostra?**
+## L’erba del vicino è veramente più verde della nostra?
 
 Molti dei siti web dei brand più noti non utilizzano le sottolineature per i link. Le ragioni però possono essere molteplici.\
 Sicuramente la progettazione dei loro siti è il risultato di precisi ragionamenti, tuttavia la loro notorietà gli permette di sorvolare o alleggerire determinati accorgimenti tecnici.
 
 Questo non deve farci pensare che l’accessibilità sia un vezzo accessorio da cui farsi guidare a piacimento, bensì una summa di regole inclusive fondamentali per permettere a chiunque di accedere alle opportunità offerte dalla rete.
 
-## **Opzioni di stile**
+## Opzioni di stile
 
 Come già detto, per impostazione predefinita i **collegamenti ipertestuali sono sottolineati dai browser.** Questa resta certamente l’**opzione consigliata** oltre che a costo zero.\
 Ma se proprio abbiamo la necessità di disabilitare le sottolineature, dovremmo considerare di aggiungere un altro elemento di formattazione per distinguere i collegamenti ipertestuali dal resto del testo.
@@ -61,7 +61,7 @@ Questa può essere una tecnica efficace, a condizione che il **contrasto** tra
 
 ![Link accompagnato da un'icona](/assets/img/uploads/link-with-chevron.png)
 
-## **Conclusioni**
+## Conclusioni
 
 Secondo le linee guida sull’usabilità in merito all’aspetto dei link, la navigazione in pagina e la trovabilità dei collegamenti ipertestuali fondamentali è supportata maggiormente se seguiamo le best practices di progettazione.
 
@@ -69,7 +69,7 @@ In definitiva, il consiglio è: **utilizzate le sottolineature per far risaltar
 Altre opzioni di stile possono funzionare, ma non sono universali e a volte richiedono di essere apprese dagli utenti.\
 Il nostro lavoro, come buoni designer, è di ridurre il carico cognitivo e non aumentarlo.
 
-## **Risorse**
+## Risorse
 
 Ecco le fonti preziose da cui ho attinto per la scrittura di questo blog post:
 

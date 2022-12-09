@@ -38,16 +38,25 @@
 
   /*------------------------------------*
     Typo Scale
-    https://utopia.fyi/type/calculator?c=472,16,1.2,1480,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,2xl,12
+    https://utopia.fyi/type/calculator/?c=472,18,1.2,1480,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,2xl,12
   *------------------------------------*/
-  --typo--2: clamp(0.69rem, calc(0.66rem + 0.15vw), 0.80rem);
-  --typo--1: clamp(0.83rem, calc(0.78rem + 0.24vw), 1.00rem);
-  --typo-0: clamp(1.00rem, calc(0.92rem + 0.36vw), 1.25rem);
-  --typo-1: clamp(1.20rem, calc(1.08rem + 0.52vw), 1.56rem);
-  --typo-2: clamp(1.44rem, calc(1.27rem + 0.74vw), 1.95rem);
-  --typo-3: clamp(1.73rem, calc(1.49rem + 1.03vw), 2.44rem);
-  --typo-4: clamp(2.07rem, calc(1.74rem + 1.42vw), 3.05rem);
-  --typo-5: clamp(2.49rem, calc(2.04rem + 1.92vw), 3.82rem);
+  // --typo--2: clamp(0.69rem, calc(0.66rem + 0.15vw), 0.80rem);
+  // --typo--1: clamp(0.83rem, calc(0.78rem + 0.24vw), 1.00rem);
+  // --typo-0: clamp(1.00rem, calc(0.92rem + 0.36vw), 1.25rem);
+  // --typo-1: clamp(1.20rem, calc(1.08rem + 0.52vw), 1.56rem);
+  // --typo-2: clamp(1.44rem, calc(1.27rem + 0.74vw), 1.95rem);
+  // --typo-3: clamp(1.73rem, calc(1.49rem + 1.03vw), 2.44rem);
+  // --typo-4: clamp(2.07rem, calc(1.74rem + 1.42vw), 3.05rem);
+  // --typo-5: clamp(2.49rem, calc(2.04rem + 1.92vw), 3.82rem);
+
+  --typo--2: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.80rem);
+  --typo--1: clamp(0.94rem, calc(0.91rem + 0.10vw), 1.00rem);
+  --typo-0: clamp(1.13rem, calc(1.07rem + 0.20vw), 1.25rem);
+  --typo-1: clamp(1.35rem, calc(1.25rem + 0.34vw), 1.56rem);
+  --typo-2: clamp(1.62rem, calc(1.46rem + 0.53vw), 1.95rem);
+  --typo-3: clamp(1.94rem, calc(1.71rem + 0.79vw), 2.44rem);
+  --typo-4: clamp(2.33rem, calc(2.00rem + 1.14vw), 3.05rem);
+  --typo-5: clamp(2.80rem, calc(2.32rem + 1.61vw), 3.82rem);
 
   /*------------------------------------*
     Spacings
