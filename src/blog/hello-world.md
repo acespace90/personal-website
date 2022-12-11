@@ -51,6 +51,10 @@ Nel mio lavoro come front end developer ho sempre utilizzato Figma in modalità 
 * i componenti UI e
 * i template.
 
+![Styleguide in Figma](/assets/img/uploads/schermata-2022-12-11-alle-14.29.03.png)
+
+![Componenti Figma](/assets/img/uploads/schermata-2022-12-11-alle-14.29.08.png)
+
 Adesso invece, per necessità e anche per esercizio ho realizzato un file Figma in cui creare esattamente le 3 cose sopracitate.
 
 Ho provato fare le cose per bene finché è iniziato lo sclero con Auto Layout.
