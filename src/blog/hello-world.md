@@ -2,7 +2,7 @@
 title: Hello world
 date: 2022-12-11T14:19:27.776Z
 tag:
-  - misc
+  - Misc
 abstract: A﻿lla fine l'ho fatto, mi son deciso a rifarmi il sito e ad aprire
   perfino un blog. Ti spiego un po' cosa mi ha portato a farlo e di come l'ho
   realizzato. Non dovrebbe annoiarti, ma se lo fa puoi presentare un reclamo
@@ -24,7 +24,7 @@ E così è stato, dopo anni di continui rimandi (soprattutto per pigrizia) in cu
 
 mi son deciso non solo a rifare (o forse fare per davvero) il mio sito web, ma anche ad aprire un blog.
 
-## *“A Gennaio mi metto a dieta e vado in palestra”* (cit.)
+## *“A Gennaio dieta e palestra”* (cit.)
 
 Cosa ci scriverò ancora non lo so. O meglio lo so, voglio dire sono un front end developer appassionato di **usabilità**, **interaction design**, **accessibilità**, **design engineering**, **design system** e quindi mi piace ascoltare e parlare di questi temi, questa volta però voglio sforzarmi anche di scrivere qualcosa a riguardo.
 
