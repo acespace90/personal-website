@@ -6,7 +6,8 @@ tag:
 abstract: A﻿lla fine l'ho fatto, mi son deciso a rifarmi il sito e ad aprire
   perfino un blog. Ti spiego un po' cosa mi ha portato a farlo e di come l'ho
   realizzato. Non dovrebbe annoiarti, ma se lo fa puoi presentare un reclamo
-  formale su [questa pagina](https://www.youtube.com/watch?v=RvY5ploo1OI).
+  formale su <a href="https://www.youtube.com/watch?v=RvY5ploo1OI">questa
+  pagina</a>.
 ---
 Lo faccio, non lo faccio, lo faccio, non lo faccio?
 
