@@ -27,7 +27,7 @@ mi son deciso non solo a rifare (o forse fare per davvero) il mio sito web, ma a
 
 ## *“A Gennaio dieta e palestra”* (cit.)
 
-Cosa ci scriverò ancora non lo so. O meglio lo so, voglio dire sono un front end developer appassionato di **usabilità**, **interaction design**, **accessibilità**, **design engineering**, **design system** e quindi mi piace ascoltare e parlare di questi temi, questa volta però voglio sforzarmi anche di scrivere qualcosa a riguardo.
+Cosa ci scriverò ancora non lo so. O meglio lo so, voglio dire sono un front end developer appassionato di **usabilità**, **interaction design**, **accessibilità**, **design engineering**, **design system** e quindi mi piace ascoltare e parlare di questi temi, questa volta però voglio sforzarmi anche di **scrivere** qualcosa a riguardo.
 
 Chiamiamolo se vogliamo, un esercizio per uscire dalla zona di comfort.
 
