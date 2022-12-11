@@ -37,7 +37,7 @@ E quindi eccomi qua, mentre scrivo questo post mi dico *“Sarà il primo e ulti
 
 ## Non solo cose da nerd
 
-Come già detto, gli argomenti principali che voglio trattare sono su HTML, CSS, usabilità accessibilità, design system, interaction design ecc. ma mi piacerebbe anche usare questo spazio come raccoglitore di pensieri, esperienze, racconti di viaggio e…insomma miscellanee. Cose da “Caro diario” ecco.
+Come già detto, gli argomenti principali che voglio trattare sono su HTML, CSS, usabilità, accessibilità, design system, interaction design ecc. ma mi piacerebbe anche usare questo spazio come raccoglitore di pensieri, esperienze, racconti di viaggio e…insomma miscellanee. Cose da “Caro diario” ecco.
 
 ## Come ho realizzato questo sito
 
