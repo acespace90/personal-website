@@ -8,5 +8,5 @@
       <span class="o-tag">{{tag}}</span>
     {%- endfor -%}
   </p>
-  <p class="c-post__abstract">{{ item.data.abstract }}</p>
+  <p class="c-post__abstract">{{ item.data.abstract | safe }}</p>
 </article>
