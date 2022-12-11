@@ -30,7 +30,11 @@
 
   ul, ol {
     list-style: initial;
-    list-style-position: inside;
+    list-style-position: outside;
+  }
+
+  li {
+    margin-left: var(--space-s);
   }
 
   li + li {

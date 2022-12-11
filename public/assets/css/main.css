@@ -279,7 +279,10 @@ svg {
 }
 .o-paper ul, .o-paper ol {
   list-style: initial;
-  list-style-position: inside;
+  list-style-position: outside;
+}
+.o-paper li {
+  margin-left: var(--space-s);
 }
 .o-paper li + li {
   margin-top: var(--space-2xs);
