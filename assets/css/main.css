@@ -470,15 +470,6 @@ svg {
   outline: none;
 }
 
-.c-post__click-area:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .c-post__title {
   font-size: var(--typo-1);
   line-height: 150%;
