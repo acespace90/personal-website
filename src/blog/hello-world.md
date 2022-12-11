@@ -3,7 +3,7 @@ title: Hello world
 date: 2022-12-11T14:19:27.776Z
 tag:
   - Misc
-abstract: A﻿lla fine l'ho fatto, mi son deciso a rifarmi il sito e ad aprire
+abstract: A﻿lla fine l'ho fatto, ho deciso di rifarmi il sito e ad aprire
   perfino un blog. Ti spiego un po' cosa mi ha portato a farlo e di come l'ho
   realizzato. Non dovrebbe annoiarti, ma se lo fa puoi presentare un reclamo
   formale su <a href="https://www.youtube.com/watch?v=RvY5ploo1OI">questa
@@ -41,7 +41,7 @@ Come già detto, gli argomenti principali che voglio trattare sono su HTML, CSS,
 
 ## Come ho realizzato questo sito
 
-Se sei ancora qui e non hai abbandonato dopo le prime due righe, intanto ti ringrazio e ti voglio bene, ti racconto brevemente di come ho messo a terrà questo sitarello.
+Ti racconto brevemente di come ho messo a terrà questo sitarello.
 
 ### Design
 
