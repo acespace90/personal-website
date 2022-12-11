@@ -281,6 +281,9 @@ svg {
   list-style: initial;
   list-style-position: inside;
 }
+.o-paper li + li {
+  margin-top: var(--space-2xs);
+}
 .o-paper img, .o-paper picture {
   margin: var(--space-m) 0;
 }

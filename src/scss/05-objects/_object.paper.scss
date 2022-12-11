@@ -33,6 +33,10 @@
     list-style-position: inside;
   }
 
+  li + li {
+    margin-top: var(--space-2xs);
+  }
+
   img, picture {
     margin: var(--space-m) 0;
 
