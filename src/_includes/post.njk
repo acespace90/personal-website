@@ -2,7 +2,7 @@
   <h3 class="c-post__title">
     <a href="{{ item.url }}" class="c-post__click-area">{{ item.data.title }}</a>
   </h3>
-  <p class="c-post__date">{{ item.data.date | postDate }}</p>
+  <p class="c-post__date">{{ item.data.date | dateMed }}</p>
   <p class="c-post__tags">
     {%- for tag in item.data.tag -%}
       <span class="o-tag">{{tag}}</span>

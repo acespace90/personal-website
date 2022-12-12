@@ -8,7 +8,7 @@ contentType: article
     <h1>{{ title }}</h1>
     <div class="metadata">
       <p>
-        Postato il <time datetime="{{ date | postDate }}">{{ date | postDate }}</time> in 
+        Postato il <time datetime="{{ date | dateShort}}">{{ date | dateMed }}</time> in 
         {% for item in tag %}<span class="o-tag">{{ item }}</span>{% endfor %}
       </p>
     </div>
