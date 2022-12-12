@@ -17,9 +17,9 @@
   width: 1px;
   text-align: left;
   overflow: hidden;
-  background-color: useHSL(--white);
+  background-color: useHSL(--neutral-bg);
   padding: var(--space-2xs);
-  color: useHSL(--black);
+  color: useHSL(--site-text);
   font-weight: bold;
 
   &:active, 

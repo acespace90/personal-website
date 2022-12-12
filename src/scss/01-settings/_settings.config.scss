@@ -35,6 +35,7 @@
 
   --site-bg: var(--bg-color);
   --site-text: var(--black);
+  --neutral-bg: var(--white);
 
   /*------------------------------------*
     Typo Scale
@@ -79,4 +80,5 @@
   *------------------------------------*/
   --site-bg: var(--black);
   --site-text: var(--bg-color);
+  --neutral-bg: var(--gray-90);
 }

@@ -29,6 +29,7 @@
   --gray-100: 0, 0%, 7%;
   --site-bg: var(--bg-color);
   --site-text: var(--black);
+  --neutral-bg: var(--white);
   /*------------------------------------*
     Typo Scale
     https://utopia.fyi/type/calculator/?c=472,18,1.2,1480,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,2xl,12
@@ -62,6 +63,7 @@
   *------------------------------------*/
   --site-bg: var(--black);
   --site-text: var(--bg-color);
+  --neutral-bg: var(--gray-90);
 }
 
 /* offset-x | offset-y | blur-radius | spread-radius | color */
@@ -282,7 +284,7 @@ svg {
   list-style-position: outside;
 }
 .o-paper li {
-  margin-left: var(--space-s);
+  margin-left: var(--space-m);
 }
 .o-paper li + li {
   margin-top: var(--space-2xs);
@@ -405,6 +407,20 @@ svg {
   height: 1.5rem;
 }
 
+.c-paper {
+  background-color: HSL(var(--neutral-bg));
+  padding: var(--space-s);
+  box-shadow: 0.625rem 0.625rem 0 -0.3125rem HSL(var(--site-text));
+}
+.dark .c-paper {
+  box-shadow: none;
+}
+@media only screen and (min-width: 46.75em) {
+  .c-paper {
+    padding: var(--space-m);
+  }
+}
+
 .c-opening {
   max-width: var(--small-wrapper);
   margin: var(--space-2xl) auto;
@@ -456,14 +472,11 @@ svg {
 }
 
 .c-post {
-  background-color: HSL(var(--white));
+  background-color: HSL(var(--neutral-bg));
   padding: var(--space-s);
   position: relative;
   transition: 0.3s box-shadow ease;
   height: 100%;
-}
-.dark .c-post {
-  background-color: HSL(var(--gray-90));
 }
 .c-post:hover {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1019607843);
@@ -540,9 +553,9 @@ svg {
   width: 1px;
   text-align: left;
   overflow: hidden;
-  background-color: HSL(var(--white));
+  background-color: HSL(var(--neutral-bg));
   padding: var(--space-2xs);
-  color: HSL(var(--black));
+  color: HSL(var(--site-text));
   font-weight: bold;
 }
 .u-skip-link:active, .u-skip-link:focus, .u-skip-link:hover {

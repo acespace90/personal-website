@@ -1,0 +1,13 @@
+.c-paper {
+  background-color: useHSL(--neutral-bg);
+  padding: var(--space-s);
+  box-shadow: remify(10px) remify(10px) 0 -#{remify(5px)} useHSL(--site-text);
+
+  .dark & {
+    box-shadow: none;
+  }
+
+  @include min-screen(bp(medium)) {
+    padding: var(--space-m);
+  }
+}
