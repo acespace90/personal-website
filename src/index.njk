@@ -17,7 +17,7 @@ contentType: website
   </div>
 
   <div class="o-grid o-grid--2-cols">
-    {% set latest_posts = collections.blog | reverse %}
+    {% set latest_posts = collections.post | reverse %}
     {% for item in latest_posts.slice(0, 2) %}
       {% include "post.njk" %}
     {% endfor %}
