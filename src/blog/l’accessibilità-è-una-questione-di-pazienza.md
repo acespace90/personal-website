@@ -1,7 +1,7 @@
 ---
 title: L’accessibilità è una questione di pazienza
 date: 2017-11-14T18:02:44.176Z
-tag:
+tags:
   - Accessibilità
 abstract: L’accessibilità di un sito web è un tema molto importante e per
   comprenderne a pieno il suo valore abbiamo fatto una ricerca sul campo con

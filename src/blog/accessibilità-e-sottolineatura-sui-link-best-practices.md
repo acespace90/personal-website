@@ -1,7 +1,7 @@
 ---
 title: "Accessibilità e sottolineatura sui link: best practices"
 date: 2022-05-31T17:29:32.090Z
-tag:
+tags:
   - Accessibilità
 abstract: In Tangible parliamo continuamente di accessibilità e non ci
   stancheremo mai di farlo. È un tema per noi importante non solo per una

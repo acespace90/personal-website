@@ -4,8 +4,8 @@
   </h3>
   <p class="c-post__date">{{ item.data.date | dateMed }}</p>
   <p class="c-post__tags">
-    {%- for tag in item.data.tag -%}
-      <span class="o-tag">{{tag}}</span>
+    {%- for tag in item.data.tags | filterTagList -%}
+      <span class="o-tag">{{ tag }}</span>
     {%- endfor -%}
   </p>
   <p class="c-post__abstract">{{ item.data.abstract | safe }}</p>

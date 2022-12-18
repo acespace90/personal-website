@@ -6,10 +6,15 @@ contentType: article
 <div class="o-small-container u-mt-space-2xl">
   <div class="o-paper">
     <h1>{{ title }}</h1>
+    <ul>
+  {% for tag in tags | filterTagList %}
+    <li><a href="{{ tag | slugify }}">{{ tag }}</a></li>
+  {% endfor %}
+  </ul>
     <div class="metadata">
       <p>
         Postato il <time datetime="{{ date | dateShort}}">{{ date | dateMed }}</time> in 
-        {% for item in tag %}<span class="o-tag">{{ item }}</span>{% endfor %}
+        {% for item in tags %}<span class="o-tag">{{ item }}</span>{% endfor %}
       </p>
     </div>
   </div>

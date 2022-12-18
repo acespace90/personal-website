@@ -1,7 +1,7 @@
 ---
 title: Hello world
 date: 2022-12-11T14:19:27.776Z
-tag:
+tags:
   - Misc
 abstract: A﻿lla fine l'ho fatto, ho deciso di rifarmi il sito e ad aprire
   perfino un blog. Ti spiego un po' cosa mi ha portato a farlo e di come l'ho

@@ -1,7 +1,7 @@
 ---
 title: "Design inclusivo: l’accessibilità come opportunità di progettazione."
 date: 2018-02-24T14:04:48.714Z
-tag:
+tags:
   - Speaking
   - Accessibilità
 abstract: Cosa accade quando un team di design si trova davanti alle normative
