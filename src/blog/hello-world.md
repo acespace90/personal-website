@@ -51,9 +51,9 @@ Nel mio lavoro come front end developer ho sempre utilizzato Figma in modalità 
 * i componenti UI e
 * i template.
 
-![Styleguide in Figma](/assets/img/uploads/schermata-2022-12-11-alle-14.29.03.png)
+![Styleguide in Figma](/assets/img/uploads/figma-styleguide.png)
 
-![Componenti Figma](/assets/img/uploads/schermata-2022-12-11-alle-14.29.08.png)
+![Componenti Figma](/assets/img/uploads/figma-components.png)
 
 Adesso invece, per necessità e anche per esercizio ho realizzato un file Figma in cui creare esattamente le 3 cose sopracitate.
 
