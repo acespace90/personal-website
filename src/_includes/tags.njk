@@ -1,0 +1,7 @@
+<ul class="c-tags">
+  {%- for tag in collections.tagList -%}
+  <li class="c-tags__item">
+    <a class="c-tags__anchor" href="/blog/tag/{{ tag | slugify }}">{{ tag }}</a>
+  </li>
+  {%- endfor -%}
+</ul>

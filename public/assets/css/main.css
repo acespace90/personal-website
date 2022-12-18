@@ -478,9 +478,6 @@ svg {
   transition: 0.3s box-shadow ease;
   height: 100%;
 }
-.c-post:hover {
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1019607843);
-}
 .c-post:focus-within {
   outline: 0.125rem solid HSL(var(--site-text));
 }
@@ -532,6 +529,19 @@ svg {
     order: initial;
     margin-top: 0;
   }
+}
+
+.c-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin: var(--space-m) 0;
+}
+
+.c-tags__anchor {
+  padding: var(--space-2xs);
+  background-color: HSL(var(--neutral-bg));
+  display: block;
 }
 
 .u-visuallyhidden {
