@@ -342,6 +342,26 @@ svg {
 .c-header {
   padding-top: var(--space-s);
   padding-bottom: var(--space-s);
+  transition: all 0.3s ease-in-out, transform 0s, background-color 0s;
+}
+body.js-sticky-zone.js-scrolling-up .c-header {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+body.js-sticky-zone.js-scrolling-down .c-header {
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition-delay: 0.5s;
+}
+body.js-sticky-zone .c-header, body.js-sticky-pre-zone .c-header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  background-color: HSL(var(--site-bg));
+  width: 100%;
+  z-index: 900;
+  transform: translate(-50%, -100%);
+  opacity: 0;
 }
 
 .c-nav {
