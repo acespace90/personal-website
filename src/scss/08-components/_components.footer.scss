@@ -10,7 +10,7 @@
     order: 2;
     margin-top: var(--space-xs);
 
-    @include min-screen( remify(480px)) {
+    @include min-screen( remify(600px)) {
       margin-right: auto;
       flex: initial;
       text-align: initial;

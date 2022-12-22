@@ -547,7 +547,7 @@ body.js-sticky-zone .c-header, body.js-sticky-pre-zone .c-header {
   order: 2;
   margin-top: var(--space-xs);
 }
-@media only screen and (min-width: 30rem) {
+@media only screen and (min-width: 37.5rem) {
   .c-footer p:first-child {
     margin-right: auto;
     flex: initial;
