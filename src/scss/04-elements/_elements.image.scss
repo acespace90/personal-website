@@ -2,3 +2,8 @@ img {
   max-width: 100%;
   vertical-align: middle; // fixes the lower space created under the images
 }
+
+.img-credits {
+  @include typo-level--2;
+  text-align: center;
+}

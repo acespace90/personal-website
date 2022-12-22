@@ -218,6 +218,12 @@ img {
   vertical-align: middle;
 }
 
+.img-credits {
+  font-size: var(--typo--2);
+  line-height: 120%;
+  text-align: center;
+}
+
 svg {
   vertical-align: middle;
 }
