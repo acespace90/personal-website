@@ -92,7 +92,7 @@ Per questo motivo mi sento più confidente col termine **cross-stack** developer
 
 ## Ciò di cui Gotham ha bisogno
 
-Credo che abbiamo e avremo ancora bisogno di sviluppatori che sappiano leggere, comprendere e tradurre il design in codice front end accessibile e di sviluppatori che lo implementino all'interno della loro codebase per sviluppare la logica applicativa.
+Credo che abbiamo e avremo ancora bisogno di sviluppatori/trici che sappiano leggere, comprendere e tradurre il design in codice front end accessibile e di sviluppatori che lo implementino all'interno della loro codebase per sviluppare la logica applicativa.
 
 Le **Pattern Libraries** sono ottime soluzioni di hand-off utili a far dialogare front-of-the-front-end e back-of-the-front-end perché abilitano da una parte a parcheggiare e organizzare il deliverable, dall'altra a renderlo intellegibile a più livelli, e non parlo solo di ingegneri back end, ma anche di stakeholder, designer, marketing.
 
