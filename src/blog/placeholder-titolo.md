@@ -4,10 +4,9 @@ date: 2022-12-22T16:05:56.960Z
 tags:
   - Web
   - Front end
-abstract: Cosa intendiamo quando parliamo di sviluppo front end oggigiorno? Cosa
-  chiediamo ai front end developer e cosa ci aspettiamo che facciano? Negli
-  ultimi anni il mondo front end è inevitabilmente cambiato e qui metto giù un
-  paio di considerazioni sul tema.
+abstract: La linea di confine tra front end e back end negli anni si è sfumata e
+  gran parte del codice che storicamente era scritto in un altro linguaggio ora
+  è scritto in JavaScript. Qui alcune mie considerazioni sul tema.
 ---
 Quando parliamo di sviluppo front end parliamo ormai da un po’ di tempo di qualcosa di onnicomprensivo che va dal **JavaScript** (React, Angular o Vue) all’**HTML** e al **CSS**.
 
