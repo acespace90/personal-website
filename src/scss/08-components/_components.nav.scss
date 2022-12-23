@@ -2,6 +2,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: var(--space-xs) var(--space-m);
 }
 
 .c-nav__item {
@@ -35,15 +36,11 @@
   }
 }
 
-.c-nav__item + .c-nav__item {
-  margin-left: var(--space-l);
-}
 
 .c-nav__theme-btn {
   background: transparent;
   padding: 0;
   border: 0;
-  margin-left: var(--space-l);
   cursor: pointer;
   color: useHSL(--site-text);
 }
@@ -56,6 +53,7 @@
 
   .c-nav__item {
     text-transform: none;
+    font-size: var(--typo--1);
   }
   
 }

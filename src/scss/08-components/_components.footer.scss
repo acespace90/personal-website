@@ -8,14 +8,14 @@
     flex: 1 0 100%;
     text-align: right;
     order: 2;
-    margin-top: var(--space-xs);
+    // margin-top: var(--space-xs);
 
     @include min-screen( remify(600px)) {
       margin-right: auto;
       flex: initial;
       text-align: initial;
       order: initial;
-      margin-top: 0;
+      // margin-top: 0;
     }
     
   }

@@ -348,6 +348,7 @@ svg {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: var(--space-xs) var(--space-m);
 }
 
 .c-nav__item {
@@ -381,15 +382,10 @@ svg {
   visibility: visible;
 }
 
-.c-nav__item + .c-nav__item {
-  margin-left: var(--space-l);
-}
-
 .c-nav__theme-btn {
   background: transparent;
   padding: 0;
   border: 0;
-  margin-left: var(--space-l);
   cursor: pointer;
   color: HSL(var(--site-text));
 }
@@ -402,6 +398,7 @@ svg {
 }
 .c-nav--footer .c-nav__item {
   text-transform: none;
+  font-size: var(--typo--1);
 }
 
 .c-icon {
@@ -525,7 +522,6 @@ svg {
   flex: 1 0 100%;
   text-align: right;
   order: 2;
-  margin-top: var(--space-xs);
 }
 @media only screen and (min-width: 37.5rem) {
   .c-footer p:first-child {
@@ -533,7 +529,6 @@ svg {
     flex: initial;
     text-align: initial;
     order: initial;
-    margin-top: 0;
   }
 }
 
